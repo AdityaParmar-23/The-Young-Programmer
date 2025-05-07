@@ -1,125 +1,50 @@
+
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3D GUI with News Ticker</title>
-    <style>
-        /* Body and general layout */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f0f0f0;
-        }
-
-        /* Header with scrolling text (news ticker) */
-        .header {
-            background-color: #333;
-            color: white;
-            padding: 10px 0;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .ticker {
-            position: absolute;
-            white-space: nowrap;
-            animation: scroll 15s linear infinite;
-            font-size: 1.5em;
-            padding-left: 100%;
-        }
-
-        @keyframes scroll {
-            0% {
-                transform: translateX(100%);
-            }
-            100% {
-                transform: translateX(-100%);
-            }
-        }
-
-        /* 3D table design */
-        .table-container {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-        }
-
-        table {
-            width: 80%;
-            border-collapse: collapse;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 15px;
-            overflow: hidden;
-            background-color: white;
-        }
-
-        th, td {
-            padding: 15px;
-            text-align: center;
-            border: 1px solid #ddd;
-        }
-
-        th {
-            background-color: #4CAF50;
-            color: white;
-            font-size: 1.2em;
-        }
-
-        tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-
-        tr:hover {
-            background-color: #f1f1f1;
-            transform: scale(1.02);
-            transition: 0.2s;
-        }
-    </style>
-</head>
-<body>
-
-    <!-- Header with moving news ticker -->
-    <div class="header">
-        <div class="ticker">
-            Latest Tech Updates: AI Revolution in Healthcare, Quantum Computing Breakthrough, New VR Headsets Released, 5G Expands Globally, SpaceX Mars Mission Plans.
-        </div>
-    </div>
-
-    <!-- 3D Table Example -->
-    <div class="table-container">
-        <table>
-            <thead>
-                <tr>
-                    <th>Feature</th>
-                    <th>Description</th>
-                    <th>Status</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Feature 1</td>
-                    <td>AI Integration</td>
-                    <td>Completed</td>
-                </tr>
-                <tr>
-                    <td>Feature 2</td>
-                    <td>Blockchain Security</td>
-                    <td>In Progress</td>
-                </tr>
-                <tr>
-                    <td>Feature 3</td>
-                    <td>Cloud Computing</td>
-                    <td>Pending</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/style.min.css"
+      title="docsify-darklight-theme"
+      type="text/css"
+    />
+    <meta name="title" content="GIFS for Readme" />
+    <meta
+      name="description"
+      content="Awesome List of GIFs & avatars to use in GitHub."
+    />
+    <meta name="keywords" content="github, avatars, gifs" />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="language" content="English" />
+    <meta name="author" content="Anmol Baranwal" />
+  </head>
+  <style>
+    .sidebar ul li a img:not([src="https://user-images.githubusercontent.com/74038190/213844263-a8897a51-32f4-4b3b-b5c2-e1528b89f6f3.png"])
+    {
+      display: none;
+    }
+    .markdown-section ul {
+      list-style: none;
+    }
+    .markdown-section ul > li > p {
+      font-size: 2rem;
+    }
+  </style>
+  <body>
+    <div id="app"></div>
     <script>
-        // JavaScript could be added here for more dynamic effects or features
+      window.$docsify = {
+        //...
+      };
     </script>
-
-</body>
+    <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+    <script
+      src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/index.min.js"
+      type="text/javascript"
+    ></script>
+  </body>
 </html>
